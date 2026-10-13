@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="guide_message_array">
+        <item>More easy remote controller</item>
+        <item>Sync TV screen into phone for better control experience</item>
+    </string-array>
+</resources>

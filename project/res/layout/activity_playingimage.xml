@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rc_playingimage_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/rc_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.hisilicon.dlna.dmc.gui.customview.TouchImageView android:id="@id/image" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" />
+        <android.support.v4.view.ViewPager android:id="@id/image_ViewPager" android:visibility="visible" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_color" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rc_playing_top" android:background="@drawable/header_transparent_toolbar" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/rc_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_back" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBackClick" />
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@id/viewFlipper" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.hisilicon.dlna.dmc.gui.customview.NowPlayingImageControlView android:id="@id/rendererControlView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <include android:layout_alignParentTop="true" layout="@layout/device_not_found_layout" />
+</RelativeLayout>

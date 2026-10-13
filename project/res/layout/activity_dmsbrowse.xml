@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_dms" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rc_browse_top_layout" android:background="@drawable/header_green_toolbar" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/rc_back" android:background="@drawable/rc_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBackClick" />
+        <ImageView android:id="@id/rc_takephoto" android:background="@drawable/rc_take_photo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onTakePhotoClick" />
+        <ImageView android:id="@id/rc_quickPlayPause" android:background="@drawable/rc_quick_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/rc_takephoto" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:onClick="onPlayPauseClick" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rc_dmstitle_header_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#fff" android:ellipsize="middle" android:id="@id/rc_dms_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160.0dp" android:text="@string/myphone" android:singleLine="true" />
+            <ImageView android:background="@drawable/rc_header_arrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginTop="8.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/browse_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rc_browse_top_layout" />
+    <include android:layout_alignParentTop="true" layout="@layout/dlna_slidepushview" />
+</RelativeLayout>

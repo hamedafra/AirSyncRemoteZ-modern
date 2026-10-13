@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hisilicon.multiscreen.mirror.MirrorView android:id="@id/MirrorView" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/VideoView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/control_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mirror_error" android:contentDescription="@string/app" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_error_title" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_error_info" android:layout_below="@id/error_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="right" android:id="@id/control_layout" android:background="@drawable/image_control_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <Button android:id="@id/control_close" android:background="@drawable/image_control_close_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:id="@id/control_back" android:background="@drawable/image_control_back_select" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+            <Button android:id="@id/control_more" android:background="@drawable/image_control_more_select" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

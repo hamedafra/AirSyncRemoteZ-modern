@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/footer_gray" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <SeekBar android:id="@id/sb_duration" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="10.0dp" android:progressDrawable="@drawable/rc_seekbar" android:minHeight="10.0dp" android:thumb="@drawable/rc_seekbar_thumb" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:paddingLeft="5.0dp" android:paddingTop="3.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/rc_playorpause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_video_pause" android:scaleType="centerInside" android:layout_alignParentLeft="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rc_video_subtext" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/rc_playorpause" android:layout_centerVertical="true">
+                <TextView android:id="@id/tv_current" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:id="@id/tv_slash" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/slash" />
+                <TextView android:id="@id/tv_max" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right|bottom" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:id="@id/rc_video_volume_layout" android:paddingLeft="1.0dp" android:paddingRight="1.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="200.0dp">
+            <com.hisilicon.multiscreen.widget.VerticalSeekBar android:id="@id/sb_volume" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="160.0dp" android:maxHeight="6.0dp" android:progressDrawable="@drawable/rc_volume_seekbar" android:minHeight="6.0dp" android:thumb="@drawable/rc_volume_seekbar_thumb" />
+            <ImageView android:id="@id/volume" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_volume_normal" />
+        </LinearLayout>
+        <Button android:textStyle="bold" android:textColor="#fff" android:background="@drawable/rc_video_channel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel" />
+        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_video_enlarge" android:scaleType="centerInside" android:onClick="onResizeClick" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rc_music_shuffle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/rc_shuffle" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rc_music_volume" android:paddingLeft="1.0dp" android:paddingRight="1.0dp" android:layout_width="wrap_content" android:layout_height="200.0dp" android:layout_marginLeft="3.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_volume_normal" android:scaleType="centerInside" android:onClick="onVolumeClick" />
+        <com.hisilicon.multiscreen.widget.VerticalSeekBar android:id="@id/sb_volume" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="160.0dp" android:maxHeight="6.0dp" android:progressDrawable="@drawable/rc_volume_seekbar" android:minHeight="6.0dp" android:thumb="@drawable/rc_volume_seekbar_thumb" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_music_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20.0sp" android:textColor="#fff" android:ellipsize="middle" android:id="@id/rc_singer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rc_album_art_default_layout" android:background="@drawable/rc_album_art_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_toLeftOf="@id/rc_music_volume" android:layout_toRightOf="@id/rc_music_shuffle" android:layout_above="@id/rc_music_info" android:layout_below="@id/rc_music_shuffle">
+        <ImageView android:id="@id/rc_album_art_default" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/rc_album_art_default" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rc_album_lyric_default_layout" android:background="@color/alf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.hisilicon.dlna.dmc.gui.lyric.LyricView android:id="@id/rc_album_lyric_default" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_dmr_pushing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/rc_music_volume" android:layout_toRightOf="@id/rc_music_shuffle" android:layout_below="@id/rc_music_shuffle" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_tv_large" android:scaleType="centerInside" />
+        <TextView android:textSize="20.0sp" android:textColor="#fff" android:ellipsize="middle" android:id="@id/rc_dmr_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

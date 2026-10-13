@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:focusable="false" android:clickable="false" android:layout_width="60.0dp" android:layout_height="60.0dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/name_play_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15.0dp" android:layout_toRightOf="@id/icon" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/title_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="1.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:ellipsize="middle" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/dms_subtext_color" android:id="@id/subname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="18.0sp" android:textColor="@color/dms_subtext_color" android:id="@id/music_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <ImageView android:id="@id/playing" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_music_quick_play_item_bg" android:adjustViewBounds="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_nowplaying_root" android:background="@drawable/bg_gray" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/rc_content" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+        <SurfaceView android:id="@id/surface" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rc_dmr_pushing" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_tv_middle" android:scaleType="centerInside" />
+            <TextView android:textSize="20.0sp" android:textColor="#fff" android:ellipsize="middle" android:id="@id/rc_dmr_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:singleLine="true" />
+        </LinearLayout>
+        <com.hisilicon.dlna.dmc.gui.customview.NowPlayingVideoControlView android:layout_gravity="bottom" android:id="@id/rendererControlView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="right" android:id="@id/rc_onlive_landscape_epg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rc_playing_top" android:background="@drawable/header_transparent_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/rc_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_back" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBackClick" />
+        <ImageView android:id="@id/rc_push" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_push_up" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onPushClick" />
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/rc_push" android:layout_toRightOf="@id/rc_back" android:layout_centerVertical="true">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@id/viewFlipper" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/rc_onlive_portrait_epg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:id="@id/rc_video_guid_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <include android:layout_alignParentTop="true" layout="@layout/device_not_found_layout" />
+</RelativeLayout>

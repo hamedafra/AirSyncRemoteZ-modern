@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="TextAppearance" format="reference" />
+    <attr name="TextAppearance_textSize" />
+    <attr name="state_checked" format="boolean" />
+    <attr name="switchStyle" format="reference" />
+    <attr name="textColor" format="color|reference" />
+    <attr name="textColorHighlight" format="color|reference" />
+    <attr name="textColorHint" format="color|reference" />
+    <attr name="textColorLink" format="color|reference" />
+    <attr name="textColorPrimary" format="color|reference" />
+    <attr name="textColorSecondary" format="color|reference" />
+</resources>

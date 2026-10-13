@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Open Source Liscence" android:summary="Open Source Liscence">
+        <PreferenceScreen android:title="Cling" android:summary="Java/Android UPnP library and tools.">
+            <intent android:action="android.intent.action.VIEW" android:data="http://4thline.org/projects/cling/" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_gray_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hisilicon.multiscreen.airsyncremote.GuideGallery android:id="@id/rc_image_thumbs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:spacing="6.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rc_imagebottom_controlview" android:background="@drawable/rc_image_footer_control_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <ImageView android:id="@id/rc_push" android:padding="2.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:src="@drawable/rc_push_up" android:scaleType="centerInside" android:layout_weight="1.0" android:onClick="onPushClick" />
+        <ImageView android:id="@id/rc_playorpause" android:padding="2.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:src="@drawable/rc_quick_pause" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <ImageView android:id="@id/rc_thumbnail" android:padding="2.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:src="@drawable/rc_media_thumbnail" android:scaleType="centerInside" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

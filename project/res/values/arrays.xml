@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="guide_message_array">
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="dms_allimage_array">
+        <item>All Pictures</item>
+        <item>All Images</item>
+        <item>All Photos</item>
+        <item>All Pictures</item>
+    </string-array>
+    <string-array name="dms_allmusic_array">
+        <item>All Musics</item>
+        <item>All Musics</item>
+        <item>All Audios</item>
+    </string-array>
+    <string-array name="dms_allvideo_array">
+        <item>All Videos</item>
+        <item>All Videos</item>
+    </string-array>
+    <string-array name="dms_image_array">
+        <item>Image</item>
+        <item>Image</item>
+        <item>Images</item>
+        <item>Photo</item>
+        <item>Photos</item>
+        <item>Picture</item>
+        <item>Pictures</item>
+    </string-array>
+    <string-array name="dms_music_array">
+        <item>Music</item>
+        <item>Music</item>
+        <item>Musics</item>
+        <item>Audio</item>
+        <item>Audios</item>
+    </string-array>
+    <string-array name="dms_video_array">
+        <item>Video</item>
+        <item>Video</item>
+        <item>Videos</item>
+    </string-array>
+    <string-array name="mtags">
+        <item>remote control</item>
+        <item>Mirror control</item>
+    </string-array>
+    <string-array name="mtags_info">
+        <item>Remote Controller</item>
+        <item>Mirror Controller</item>
+    </string-array>
+</resources>

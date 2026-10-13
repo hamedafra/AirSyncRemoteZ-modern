@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/new_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/picutres_show_item" android:background="@drawable/browse_image_default" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/new_icon_box" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/browse_image_box" android:scaleType="fitXY" />
+    </FrameLayout>
+</RelativeLayout>

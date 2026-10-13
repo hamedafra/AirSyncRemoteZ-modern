@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/device_not_found_layout" android:background="@drawable/device_not_found_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/device_not_found_warn" android:scaleType="centerInside" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/warn_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/device_not_found" android:singleLine="true" />
+</LinearLayout>

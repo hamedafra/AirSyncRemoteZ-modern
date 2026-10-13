@@ -1,0 +1,19 @@
+version: 3.0.3
+apkFileName: AirSyncRemoteZ.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 28
+versionInfo:
+  versionCode: 22
+  versionName: Beta 9 (modern)
+resourcesInfo:
+  packageId: 127
+  keepRawValues: true
+doNotCompress:
+- arsc
+- ogg
+- png
+- so

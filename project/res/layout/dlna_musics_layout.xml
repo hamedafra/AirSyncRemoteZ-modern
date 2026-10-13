@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/rc_dms_shuffle_play_layout" android:background="@drawable/bg_dms_item_odd" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/rc_music_shuffle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/rc_shuffle" android:scaleType="centerInside" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#000" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shuffle_play" android:singleLine="true" />
+    </LinearLayout>
+    <GridView android:id="@id/dms_music_browsing" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/bg_dms_item_press" android:numColumns="1" android:dividerHeight="1.0dp" android:layout_above="@id/rc_dms_music_bottom_layout" android:layout_below="@id/rc_dms_shuffle_play_layout" />
+    <FrameLayout android:id="@id/rc_dms_music_bottom_layout" android:background="@drawable/rc_dms_bottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#000" android:layout_gravity="left|center" android:paddingLeft="30.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dms_music_playlist" android:singleLine="true" />
+        <ImageView android:layout_gravity="right|center" android:background="@drawable/rc_dms_bottom_arrow" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

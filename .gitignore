@@ -1,0 +1,10 @@
+# Signing key: never publish (anyone holding it could sign updates as this app)
+signing.keystore
+signing.password
+*.jks
+*.idsig
+# apktool build cache
+project/build/
+# Diagnostics captured from devices (contains device names and IP addresses)
+mirror-stats.log
+.DS_Store

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/device_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/device_title_select" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/device_title_disconnected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/device_disconnected_normal" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/device_title_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/device_select_no_connect" android:layout_toRightOf="@id/device_title_disconnected" />
+            <ImageView android:id="@id/device_title_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginBottom="3.0dp" android:src="@drawable/device_arrow_normal" android:layout_toRightOf="@id/device_title_info" android:layout_alignBottom="@id/device_title_info" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/dummy_view" android:layout_width="match_parent" android:layout_height="150.0dp" />
+    <com.aloys.formuler.airsyncremote.DeviceChildView android:id="@id/device_child" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/device_setting" android:layout_below="@id/dummy_view" />
+    <Button android:gravity="bottom" android:id="@id/device_setting" android:background="@drawable/device_set_select" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

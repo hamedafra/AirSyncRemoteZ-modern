@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@color/alf" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/remote_number_layout" android:background="@color/alf" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/remote_number_f1" android:background="@drawable/remote_number_f1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:id="@id/remote_number_f2" android:background="@drawable/remote_number_f2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" />
+            <Button android:id="@id/remote_number_f3" android:background="@drawable/remote_number_f3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" />
+            <Button android:id="@id/remote_number_f4" android:background="@drawable/remote_number_f4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" />
+        </LinearLayout>
+        <TableLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TableRow android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+                <Button android:id="@id/remote_number_ones" android:background="@drawable/remote_number_one" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:id="@id/remote_number_twos" android:background="@drawable/remote_number_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+                <Button android:id="@id/remote_number_threes" android:background="@drawable/remote_number_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+            </TableRow>
+            <TableRow android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+                <Button android:id="@id/remote_number_fours" android:background="@drawable/remote_number_four" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:id="@id/remote_number_fives" android:background="@drawable/remote_number_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+                <Button android:id="@id/remote_number_sixs" android:background="@drawable/remote_number_six" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+            </TableRow>
+            <TableRow android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+                <Button android:id="@id/remote_number_sevens" android:background="@drawable/remote_number_seven" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:id="@id/remote_number_eights" android:background="@drawable/remote_number_eight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+                <Button android:id="@id/remote_number_nines" android:background="@drawable/remote_number_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+            </TableRow>
+            <TableRow android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+                <Button android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/remote_number_ok" android:background="@drawable/remote_number_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_number_done" />
+                <Button android:id="@id/remote_number_zeros" android:background="@drawable/remote_number_zero" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+                <Button android:id="@id/remote_number_del" android:background="@drawable/remote_number_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" />
+            </TableRow>
+        </TableLayout>
+        <Button android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/remote_number_stay" android:background="@drawable/remote_number_empty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/remote_stay" />
+    </LinearLayout>
+</LinearLayout>

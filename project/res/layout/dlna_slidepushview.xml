@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hisilicon.multiscreen.widget.SlidePushView android:id="@id/slidePushView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/mybox_title_set" />
+    <RelativeLayout android:id="@id/mybox_about_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_set">
+        <ImageView android:id="@id/mybox_about_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dp" android:src="@drawable/logo" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="vertical" android:id="@id/mybox_name_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_below="@id/mybox_about_logo">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_name" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_version_info" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/mybox_about_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_version" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:layout_alignParentBottom="true">
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_copyright" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/about_company" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

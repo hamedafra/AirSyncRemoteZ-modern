@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/remote_head" android:background="@drawable/header_transparent_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/remote_head_back" android:background="@drawable/remote_status_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/remote_head_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/remote_head_disconnected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/device_disconnected_normal" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/remote_head_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/device_select_no_connect" android:layout_toRightOf="@id/remote_head_disconnected" />
+        <ImageView android:id="@id/remote_head_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginBottom="2.0dp" android:src="@drawable/remote_head_arrow" android:layout_toRightOf="@id/remote_head_title" android:layout_alignBottom="@id/remote_head_title" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <Button android:id="@id/remote_head_menu" android:background="@drawable/remote_head_switch_keyboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

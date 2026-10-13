@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="guide_message_array">
+        <item>触手可及的遥控器</item>
+        <item>手机同步电视画面，方便的控制电视</item>
+    </string-array>
+</resources>

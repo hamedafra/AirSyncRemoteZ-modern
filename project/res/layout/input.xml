@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/mybox_remote_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/white" android:id="@id/button" android:background="@drawable/input_box_select" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginRight="5.0dp" android:text="@string/input_end" android:layout_alignParentRight="true" />
+    <com.hisilicon.multiscreen.vime.VIMEEditText android:textSize="20.0sp" android:textColor="@color/white" android:gravity="left|top" android:id="@id/et_input_text" android:background="@drawable/input_box" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_marginTop="10.0dp" android:lines="9" android:layout_below="@id/button" android:inputType="textMultiLine" />
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_linearLayout" android:background="@drawable/bg_dms_item_even" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:id="@id/linearLayout1" android:paddingTop="10.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:gravity="center" android:id="@id/rc_share_picture_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_share_picture" android:layout_weight="1.0" />
+            <ImageView android:gravity="center" android:id="@id/rc_share_video_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_share_video" android:layout_weight="1.0" />
+            <ImageView android:gravity="center" android:id="@id/rc_share_music_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_share_music" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.hisilicon.multiscreen.widget.BottomLineImageView android:id="@id/iv_bottom_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_bottom_line" android:scaleType="matrix" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_linearLayout">
+        <android.support.v4.view.ViewPager android:id="@id/vPager" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/progress_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/progress_layout" />
+        </LinearLayout>
+        <ImageView android:id="@id/rc_slide_area" android:layout_width="match_parent" android:layout_height="match_parent" android:verticalSpacing="5.0dp" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/rc_dms_devices_layout" android:background="@color/alf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/device_list_layout" android:background="@drawable/device_panel" android:paddingLeft="20.0dp" android:paddingTop="20.0dp" android:paddingRight="20.0dp" android:paddingBottom="95.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <GridView android:id="@id/rc_dms_devices" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="@null" android:verticalSpacing="10.0dp" android:numColumns="1" android:divider="@null" />
+        </LinearLayout>
+        <FrameLayout android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/rc_dms_devices_back" android:background="@drawable/device_cancel_select" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="@string/dis_cancel" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

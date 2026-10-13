@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/device_imageview" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/app_name" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/device_tag_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/device_layer" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/device_foucs" android:layout_alignLeft="@id/device_imageview" android:layout_alignTop="@id/device_imageview" android:layout_alignRight="@id/device_imageview" android:layout_alignBottom="@id/device_imageview" android:contentDescription="@string/app_name" />
+</RelativeLayout>

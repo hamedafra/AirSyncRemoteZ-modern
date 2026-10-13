@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_seekControl" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <SeekBar android:id="@id/sb_duration" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="10.0dp" android:progressDrawable="@drawable/rc_seekbar" android:minHeight="10.0dp" android:thumb="@drawable/rc_seekbar_thumb" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/tv_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:id="@id/tv_max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rc_music_bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <ImageView android:id="@id/rc_push" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_push_music_up" android:scaleType="centerInside" android:onClick="onPushClick" />
+        <ImageView android:id="@id/rc_music_button_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_music_bottom_divider" android:scaleType="centerInside" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="left|center" android:id="@id/rc_previous" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_media_previous" android:scaleType="centerInside" />
+            <ImageView android:layout_gravity="center" android:id="@id/rc_playorpause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_media_play" android:scaleType="centerInside" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/rc_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rc_media_next" android:scaleType="centerInside" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

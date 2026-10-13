@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_dms" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rc_otherbrowse_layout" android:background="@drawable/header_green_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/rc_back" android:background="@drawable/rc_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBackClick" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#fff" android:ellipsize="middle" android:id="@id/rc_dms_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dms_picture_other" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rc_otherbrowse_layout">
+        <GridView android:id="@id/dms_other_browsing" android:paddingTop="3.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/bg_dms_item_press" android:numColumns="1" android:dividerHeight="1.0dp" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/progress_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/progress_layout" />
+        </LinearLayout>
+        <ImageView android:id="@id/rc_slide_area" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <include android:layout_alignParentTop="true" layout="@layout/dlna_slidepushview" />
+</RelativeLayout>
