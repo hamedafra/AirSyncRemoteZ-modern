@@ -13,3 +13,7 @@ mirror-stats.log
 # Mac app build output
 macos/build/
 macos/.build/
+# Windows app build output
+windows/bin/
+windows/obj/
+windows/publish/

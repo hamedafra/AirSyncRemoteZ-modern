@@ -24,7 +24,7 @@ Universal app (Apple Silicon and Intel), macOS 13 or newer.
 Only one remote can control the receiver at a time — connecting from the Mac disconnects the phone app.
 
 ## Install
-Download `Air-Sync-Remote-Z-macOS.zip` from the [Releases page](https://github.com/hamedafra/AirSyncRemoteZ-modern/releases),
+Download `Air-Sync-Remote-Z-macOS.zip` from the [Releases page](https://github.com/hamedafra/Air-Sync-Remote-Z/releases),
 unzip it and move **Air Sync Remote-Z** to Applications. The app is not notarized by Apple, so the first time
 right-click it → **Open** → **Open** (or run `xattr -dr com.apple.quarantine "/Applications/Air Sync Remote-Z.app"`).
 On first launch allow **"find devices on your local network"**, otherwise the receiver can't be found or mirrored.

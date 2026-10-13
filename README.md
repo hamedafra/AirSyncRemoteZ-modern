@@ -1,4 +1,4 @@
-# Air Sync Remote-Z — modernized for current Android, plus a Mac version
+# Air Sync Remote-Z — modernized for current Android, plus Mac and Windows versions
 
 ## About Air Sync Remote-Z Beta 9
 
@@ -11,13 +11,16 @@ To get started, connect your Android phone or tablet to the same network as your
 *(Original description of Air Sync Remote-Z Beta 9.)*
 
 ## Download
-From the [Releases page](https://github.com/hamedafra/AirSyncRemoteZ-modern/releases):
+From the [Releases page](https://github.com/hamedafra/Air-Sync-Remote-Z/releases):
 - **Android** — `Air-Sync-Remote-Z-Android.apk`: one APK for every phone and tablet (Android 5 to 16, including
   64-bit-only devices). Remote, keyboard, voice, DLNA, AirMouse and screen mirroring all work. Builds are signed
   with the same key, so newer ones install as updates; the original app (different signature) must be
   uninstalled first.
 - **Mac** — `Air-Sync-Remote-Z-macOS.zip`: native macOS app (Apple Silicon and Intel, macOS 13+) with remote,
   keyboard, mirroring with sound, full screen and more. See [macos/README.md](macos/README.md).
+- **Windows** — `Air-Sync-Remote-Z-Setup-x64.exe` (Intel/AMD PCs) or `Air-Sync-Remote-Z-Setup-arm64.exe`
+  (ARM PCs, e.g. Snapdragon): native Windows 10/11 app with the same features as the Mac version.
+  See [windows/README.md](windows/README.md).
 
 # Android app
 
@@ -71,4 +74,4 @@ another; uninstall first.
 ## Disclaimer
 Unofficial community modernization of an abandoned app. `project/` is the original Air Sync Remote-Z APK
 decompiled with apktool. The original app and its code belong to their owners (Fortis/Formuler, HiSilicon,
-Huawei). New code: `mirror-src/`, `macos/`, the build scripts and the changes listed above. Not affiliated with any of them.
+Huawei). New code: `mirror-src/`, `macos/`, `windows/`, the build scripts and the changes listed above. Not affiliated with any of them.
