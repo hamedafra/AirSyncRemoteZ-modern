@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key><string>Air Sync Remote-Z</string>
+    <key>CFBundleDisplayName</key><string>Air Sync Remote-Z</string>
+    <key>CFBundleIdentifier</key><string>local.airsyncremote.mac</string>
+    <key>CFBundleExecutable</key><string>AirSyncRemote</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
+    <key>LSMinimumSystemVersion</key><string>13.0</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+    <key>NSLocalNetworkUsageDescription</key><string>Air Sync Remote-Z finds your Formuler receiver on the local network, controls it and receives its mirrored screen.</string>
+    <key>NSBonjourServices</key><array><string>_airsync._udp</string></array>
+</dict>
+</plist>

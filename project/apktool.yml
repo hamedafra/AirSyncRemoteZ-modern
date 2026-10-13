@@ -7,7 +7,7 @@ sdkInfo:
   minSdkVersion: 21
   targetSdkVersion: 28
 versionInfo:
-  versionCode: 22
+  versionCode: 23
   versionName: Beta 9 (modern)
 resourcesInfo:
   packageId: 127

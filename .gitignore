@@ -10,3 +10,6 @@ mirror-stats.log
 .DS_Store
 # Built APK: published on the GitHub Releases page instead
 *.apk
+# Mac app build output
+macos/build/
+macos/.build/

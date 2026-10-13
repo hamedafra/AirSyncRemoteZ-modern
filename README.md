@@ -1,15 +1,32 @@
-# Air Sync Remote-Z (Beta 9) — modernized build
+# Air Sync Remote-Z — modernized for current Android, plus a Mac version
+
+## About Air Sync Remote-Z Beta 9
+
+Use your Android phone or tablet as a wireless RCU for your Formuler STB. Easily navigate content and play games on your Formuler Z-series device with the built-in touchpad, gamepad, and air mouse controls. Use Air Sync Remote to quickly enter text by using the touchscreen keyboard.
+
+Air Sync Remote also offers mult-screen mirroring with simulateous touchscreen control support. Pull content from the big screen to your mobile device with this easy-to-use app.
+
+To get started, connect your Android phone or tablet to the same network as your Formuler Z device.
+
+*(Original description of Air Sync Remote-Z Beta 9.)*
+
+## Download
+From the [Releases page](https://github.com/hamedafra/AirSyncRemoteZ-modern/releases):
+- **Android** — `Air-Sync-Remote-Z-Android.apk`: one APK for every phone and tablet (Android 5 to 16, including
+  64-bit-only devices). Remote, keyboard, voice, DLNA, AirMouse and screen mirroring all work. Builds are signed
+  with the same key, so newer ones install as updates; the original app (different signature) must be
+  uninstalled first.
+- **Mac** — `Air-Sync-Remote-Z-macOS.zip`: native macOS app (Apple Silicon and Intel, macOS 13+) with remote,
+  keyboard, mirroring with sound, full screen and more. See [macos/README.md](macos/README.md).
+
+# Android app
 
 Rebuilt from the original APK (apkmirror `Beta_9-10`, signed by Fortis) with apktool, so it installs and
 runs on current Android, including 64-bit-only phones (tested on Android 15 and 16).
 
-## Install
-**AirSyncRemoteZ-modern.apk** (download it from the [Releases page](https://github.com/hamedafra/AirSyncRemoteZ-modern/releases/latest)) — one APK for every phone (no native libraries needed). Remote, keyboard,
-voice, DLNA, AirMouse and screen mirroring all work. Signed with `signing.keystore`, so newer builds install as
-updates over older ones; a copy of the original app (different signature) must be uninstalled first.
-
 ## Changes
 - targetSdk 19 → 28, minSdk 21 (Android 14+ refuses to install old-target apps).
+- App name shown as "Air Sync Remote-Z" (was "Air Sync Remote Z").
 - Runtime permission request (mic, camera, storage) on the main screen.
 - `usesCleartextTraffic=true` + `org.apache.http.legacy` (UPnP/DLNA uses plain HTTP via Apache HttpClient).
 - `file://` URI crash fix (StrictMode VmPolicy reset in `MyApp`).
@@ -54,4 +71,4 @@ another; uninstall first.
 ## Disclaimer
 Unofficial community modernization of an abandoned app. `project/` is the original Air Sync Remote-Z APK
 decompiled with apktool. The original app and its code belong to their owners (Fortis/Formuler, HiSilicon,
-Huawei). New code: `mirror-src/`, the build scripts and the changes listed above. Not affiliated with any of them.
+Huawei). New code: `mirror-src/`, `macos/`, the build scripts and the changes listed above. Not affiliated with any of them.
