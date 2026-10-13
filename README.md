@@ -4,7 +4,7 @@ Rebuilt from the original APK (apkmirror `Beta_9-10`, signed by Fortis) with apk
 runs on current Android, including 64-bit-only phones (tested on Android 15 and 16).
 
 ## Install
-**AirSyncRemoteZ-modern.apk** — one APK for every phone (no native libraries needed). Remote, keyboard,
+**AirSyncRemoteZ-modern.apk** (download it from the [Releases page](https://github.com/hamedafra/AirSyncRemoteZ-modern/releases/latest)) — one APK for every phone (no native libraries needed). Remote, keyboard,
 voice, DLNA, AirMouse and screen mirroring all work. Signed with `signing.keystore`, so newer builds install as
 updates over older ones; a copy of the original app (different signature) must be uninstalled first.
 

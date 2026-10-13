@@ -8,3 +8,5 @@ project/build/
 # Diagnostics captured from devices (contains device names and IP addresses)
 mirror-stats.log
 .DS_Store
+# Built APK: published on the GitHub Releases page instead
+*.apk
